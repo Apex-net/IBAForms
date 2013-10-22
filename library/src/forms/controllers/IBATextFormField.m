@@ -21,6 +21,15 @@
 @implementation IBATextFormField
 
 @synthesize textFormFieldCell = textFormFieldCell_;
+@synthesize maxCharacterLength = maxCharacterLength_;
+
+- (id)initWithKeyPath:(NSString*)keyPath title:(NSString*)title valueTransformer:(NSValueTransformer *)valueTransformer {
+    if ((self = [super initWithKeyPath:keyPath title:title valueTransformer:valueTransformer])) {
+        self.maxCharacterLength = -1;
+    }
+    
+    return self;
+}
 
 - (void)dealloc {
 	IBA_RELEASE_SAFELY(textFormFieldCell_);
@@ -58,6 +67,13 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	return [[IBAInputManager sharedIBAInputManager] activateNextInputRequestor];;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    // Enforce the maximum character length if it has been set
+    NSInteger newLength = [textField.text length] + [string length] - range.length;
+    return (self.maxCharacterLength < 0) || (self.maxCharacterLength >= newLength);
 }
 
 

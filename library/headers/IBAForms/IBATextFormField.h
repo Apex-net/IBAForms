@@ -20,5 +20,6 @@
 }
 
 @property (nonatomic, retain) IBATextFormFieldCell *textFormFieldCell;
+@property (nonatomic, assign) NSInteger maxCharacterLength;
 
 @end

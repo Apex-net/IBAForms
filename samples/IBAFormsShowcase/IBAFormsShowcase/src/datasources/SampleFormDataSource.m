@@ -24,7 +24,9 @@
 		// Some basic form fields that accept text input
 		IBAFormSection *basicFieldSection = [self addSectionWithHeaderTitle:@"Basic Form Fields" footerTitle:nil];
 
-		[basicFieldSection addFormField:[[[IBATextFormField alloc] initWithKeyPath:@"text" title:@"Text"] autorelease]];
+        IBATextFormField *limitedTextFormField = [[[IBATextFormField alloc] initWithKeyPath:@"text" title:@"Text(20)"] autorelease];
+        limitedTextFormField.maxCharacterLength = 20;
+		[basicFieldSection addFormField:limitedTextFormField];
 		[IBATextFormField passwordTextFormFieldWithSection:basicFieldSection keyPath:@"password" title:@"Password" valueTransformer:nil];
 		[basicFieldSection addFormField:[[[IBABooleanFormField alloc] initWithKeyPath:@"booleanSwitchValue" title:@"Switch"] autorelease]];
 		[basicFieldSection addFormField:[[[IBABooleanFormField alloc] initWithKeyPath:@"booleanCheckValue" title:@"Check" type:IBABooleanFormFieldTypeCheck] autorelease]];
