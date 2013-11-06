@@ -42,7 +42,6 @@
 		pickListTableView_ = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 216) style:UITableViewStyleGrouped];
 		pickListTableView_.dataSource = self;
 		pickListTableView_.delegate = self;
-		pickListTableView_.backgroundColor = [UIColor viewFlipsideBackgroundColor];
 
 		pickListTableView_.autoresizingMask = UIViewAutoresizingFlexibleHeight;
 	}

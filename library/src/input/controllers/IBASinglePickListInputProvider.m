@@ -48,7 +48,6 @@
 	if ((self = [super init])) {
 		providerView_ = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
 		providerView_.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-		providerView_.backgroundColor = [UIColor viewFlipsideBackgroundColor];
 		
 		pickerView_ = [[UIPickerView alloc] initWithFrame:[providerView_ bounds]];
 		pickerView_.showsSelectionIndicator = YES;
