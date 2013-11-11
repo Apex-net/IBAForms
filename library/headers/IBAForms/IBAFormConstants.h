@@ -13,10 +13,12 @@
 //
 
 #import "IBACommon.h"
+#import "UIColor+IBAColor.h"
 
 #define IBAFormFieldCellTextColor [UIColor colorWithRed:0.464 green:0.750 blue:0.775 alpha:1.000]
 #define IBAFormFieldCellBackgoundColor [UIColor whiteColor]
 #define IBAFormFieldActiveColor [UIColor colorWithRed:0.893 green:0.976 blue:0.976 alpha:1.000]
+#define IBAFormInputProviderBackgroundColor [UIColor backgroundColorForType:UIKeyboardAppearanceLight]
 
 // Notifications
 #define IBAPushViewController @"IBAPushViewController"

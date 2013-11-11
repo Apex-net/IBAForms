@@ -14,6 +14,7 @@
 
 #import "IBADateInputProvider.h"
 #import "IBACommon.h"
+#import "IBAFormConstants.h"
 
 @interface IBADateInputProvider ()
 @property (nonatomic, readonly) UIView *datePickerView;
@@ -58,6 +59,7 @@
 	if (datePickerView_ == nil) {
 		datePickerView_ = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
 		datePickerView_.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+        datePickerView_.backgroundColor = IBAFormInputProviderBackgroundColor;
 		
 		datePicker_ = [[UIDatePicker alloc] init];
 		datePicker_.datePickerMode = self.datePickerMode;

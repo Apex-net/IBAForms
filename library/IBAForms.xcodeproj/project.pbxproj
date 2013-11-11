@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57BBFAC418314B3A007B5F56 /* UIColor+IBAColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 57BBFAC218314B3A007B5F56 /* UIColor+IBAColor.h */; };
+		57BBFAC518314B3A007B5F56 /* UIColor+IBAColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BBFAC318314B3A007B5F56 /* UIColor+IBAColor.m */; };
 		7512409F13A8F6BE007BF2B5 /* IBABooleanFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7512408213A8F6BE007BF2B5 /* IBABooleanFormField.m */; };
 		751240A013A8F6BE007BF2B5 /* IBAButtonFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7512408313A8F6BE007BF2B5 /* IBAButtonFormField.m */; };
 		751240A113A8F6BE007BF2B5 /* IBADateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7512408413A8F6BE007BF2B5 /* IBADateFormField.m */; };
@@ -73,6 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57BBFAC218314B3A007B5F56 /* UIColor+IBAColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+IBAColor.h"; sourceTree = "<group>"; };
+		57BBFAC318314B3A007B5F56 /* UIColor+IBAColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+IBAColor.m"; path = "../../headers/IBAForms/UIColor+IBAColor.m"; sourceTree = "<group>"; };
 		7512408213A8F6BE007BF2B5 /* IBABooleanFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBABooleanFormField.m; sourceTree = "<group>"; };
 		7512408313A8F6BE007BF2B5 /* IBAButtonFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBAButtonFormField.m; sourceTree = "<group>"; };
 		7512408413A8F6BE007BF2B5 /* IBADateFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBADateFormField.m; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 				751240DB13A8F6CF007BF2B5 /* IBATextInputProvider.h */,
 				753A7EFA13B36BCF003931DA /* IBATitleFormField.h */,
 				952FAB8114F32DA8006213AA /* IBATextFormField+Factory.h */,
+				57BBFAC218314B3A007B5F56 /* UIColor+IBAColor.h */,
 			);
 			path = IBAForms;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 		952FAB7B14F2081C006213AA /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				57BBFAC318314B3A007B5F56 /* UIColor+IBAColor.m */,
 				952FAB7E14F20936006213AA /* IBATextFormField+Factory.m */,
 			);
 			name = categories;
@@ -364,6 +370,7 @@
 				751240F913A8F6CF007BF2B5 /* IBAPickListOptionsProvider.h in Headers */,
 				751240FA13A8F6CF007BF2B5 /* IBAReadOnlyTextFormField.h in Headers */,
 				751240FB13A8F6CF007BF2B5 /* IBASinglePickListInputProvider.h in Headers */,
+				57BBFAC418314B3A007B5F56 /* UIColor+IBAColor.h in Headers */,
 				751240FC13A8F6CF007BF2B5 /* IBATextFormField.h in Headers */,
 				751240FD13A8F6CF007BF2B5 /* IBATextFormFieldCell.h in Headers */,
 				751240FE13A8F6CF007BF2B5 /* IBATextInputProvider.h in Headers */,
@@ -430,6 +437,7 @@
 				751240A013A8F6BE007BF2B5 /* IBAButtonFormField.m in Sources */,
 				751240A113A8F6BE007BF2B5 /* IBADateFormField.m in Sources */,
 				751240A213A8F6BE007BF2B5 /* IBAFormDataSource.m in Sources */,
+				57BBFAC518314B3A007B5F56 /* UIColor+IBAColor.m in Sources */,
 				751240A313A8F6BE007BF2B5 /* IBAFormField.m in Sources */,
 				751240A413A8F6BE007BF2B5 /* IBAFormFieldStyle.m in Sources */,
 				751240A513A8F6BE007BF2B5 /* IBAFormSection.m in Sources */,

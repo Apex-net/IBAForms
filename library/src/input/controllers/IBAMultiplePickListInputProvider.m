@@ -14,6 +14,7 @@
 
 #import "IBAMultiplePickListInputProvider.h"
 #import "IBACommon.h"
+#import "IBAFormConstants.h"
 #import "IBAPickListOptionsProvider.h"
 
 @interface IBAMultiplePickListInputProvider ()
@@ -42,6 +43,7 @@
 		pickListTableView_ = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 216) style:UITableViewStyleGrouped];
 		pickListTableView_.dataSource = self;
 		pickListTableView_.delegate = self;
+        pickListTableView_.backgroundColor = IBAFormInputProviderBackgroundColor;
 
 		pickListTableView_.autoresizingMask = UIViewAutoresizingFlexibleHeight;
 	}

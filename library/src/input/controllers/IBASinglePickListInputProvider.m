@@ -14,6 +14,7 @@
 
 #import "IBASinglePickListInputProvider.h"
 #import "IBACommon.h"
+#import "IBAFormConstants.h"
 #import "IBAPickListOptionsProvider.h"
 
 @interface IBASinglePickListInputProvider ()
@@ -48,6 +49,7 @@
 	if ((self = [super init])) {
 		providerView_ = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
 		providerView_.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+        providerView_.backgroundColor = IBAFormInputProviderBackgroundColor;
 		
 		pickerView_ = [[UIPickerView alloc] initWithFrame:[providerView_ bounds]];
 		pickerView_.showsSelectionIndicator = YES;
