@@ -19,14 +19,14 @@
 	UIColor *labelBackgroundColor_;
 	UIFont *labelFont_;
 	CGRect labelFrame_;
-	UITextAlignment labelTextAlignment_;
+	NSTextAlignment labelTextAlignment_;
 	UIViewAutoresizing labelAutoresizingMask_;
 	
 	UIColor *valueTextColor_;
 	UIColor *valueBackgroundColor_;
 	UIFont *valueFont_;
 	CGRect valueFrame_;
-	UITextAlignment valueTextAlignment_;
+	NSTextAlignment valueTextAlignment_;
 	UIViewAutoresizing valueAutoresizingMask_;
 
 	UIColor *activeColor_;
@@ -36,14 +36,14 @@
 @property (nonatomic, retain) UIColor *labelBackgroundColor;
 @property (nonatomic, retain) UIFont *labelFont;
 @property (nonatomic, assign) CGRect labelFrame;
-@property (nonatomic, assign) UITextAlignment labelTextAlignment;
+@property (nonatomic, assign) NSTextAlignment labelTextAlignment;
 @property (nonatomic, assign) UIViewAutoresizing labelAutoresizingMask;
 
 @property (nonatomic, retain) UIColor *valueTextColor;
 @property (nonatomic, retain) UIColor *valueBackgroundColor;
 @property (nonatomic, retain) UIFont *valueFont;
 @property (nonatomic, assign) CGRect valueFrame;
-@property (nonatomic, assign) UITextAlignment valueTextAlignment;
+@property (nonatomic, assign) NSTextAlignment valueTextAlignment;
 @property (nonatomic, assign) UIViewAutoresizing valueAutoresizingMask;
 
 @property (nonatomic, retain) UIColor *activeColor;
