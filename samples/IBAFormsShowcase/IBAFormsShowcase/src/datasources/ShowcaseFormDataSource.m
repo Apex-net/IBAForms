@@ -88,7 +88,7 @@
 		sampleFormController.navigationItem.rightBarButtonItem = doneButton;
 		UINavigationController *formNavigationController = [[[UINavigationController alloc] initWithRootViewController:sampleFormController] autorelease];
 		formNavigationController.modalPresentationStyle = showcaseModel.modalPresentationStyle;
-		[rootViewController presentModalViewController:formNavigationController animated:YES];
+		[rootViewController presentViewController:formNavigationController animated:YES completion:NULL];
 	} else {
         if ([rootViewController isKindOfClass:[UINavigationController class]]) {
 			[(UINavigationController *)rootViewController pushViewController:sampleFormController animated:YES];
@@ -97,7 +97,7 @@
 }
 
 - (void)dismissSampleForm {
-	[[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissModalViewControllerAnimated:YES];
+	[[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end

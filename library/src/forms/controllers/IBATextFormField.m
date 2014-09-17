@@ -66,7 +66,7 @@
 #pragma mark UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-	return [[IBAInputManager sharedIBAInputManager] activateNextInputRequestor];;
+	return [[IBAInputManager sharedIBAInputManager] activateNextInputRequestor];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string

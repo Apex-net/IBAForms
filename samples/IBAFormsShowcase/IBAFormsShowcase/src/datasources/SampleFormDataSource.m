@@ -37,8 +37,8 @@
 		IBAFormFieldStyle *style = [[[IBAFormFieldStyle alloc] init] autorelease];
 		style.labelTextColor = [UIColor blackColor];
 		style.labelFont = [UIFont systemFontOfSize:14];
-		style.labelTextAlignment = UITextAlignmentLeft;
-		style.valueTextAlignment = UITextAlignmentRight;
+		style.labelTextAlignment = NSTextAlignmentLeft;
+		style.valueTextAlignment = NSTextAlignmentRight;
 		style.valueTextColor = [UIColor darkGrayColor];
 		style.activeColor = [UIColor colorWithRed:0.934 green:0.791 blue:0.905 alpha:1.000];
 
@@ -125,7 +125,7 @@
 		// Read-only fields
 		IBAFormFieldStyle *readonlyFieldStyle = [[[IBAFormFieldStyle alloc] init] autorelease];
 		readonlyFieldStyle.labelFrame = CGRectMake(IBAFormFieldLabelX, IBAFormFieldLabelY, IBAFormFieldLabelWidth + 100, IBAFormFieldLabelHeight);
-		readonlyFieldStyle.labelTextAlignment = UITextAlignmentLeft;
+		readonlyFieldStyle.labelTextAlignment = NSTextAlignmentLeft;
     
 		IBAFormSection *readonlyFieldSection = [self addSectionWithHeaderTitle:@"Read-Only Fields" footerTitle:nil];
 		

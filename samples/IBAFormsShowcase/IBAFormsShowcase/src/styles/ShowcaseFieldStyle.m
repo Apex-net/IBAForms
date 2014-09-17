@@ -22,9 +22,9 @@
 	if (self = [super init]) {
 		self.labelTextColor = [UIColor blackColor];
 		self.labelFont = [UIFont boldSystemFontOfSize:18];
-		self.labelTextAlignment = UITextAlignmentLeft;
+		self.labelTextAlignment = NSTextAlignmentLeft;
 		self.labelFrame = CGRectMake(IBAFormFieldLabelX, 8, 140, IBAFormFieldLabelHeight);
-		self.valueTextAlignment = UITextAlignmentRight;
+		self.valueTextAlignment = NSTextAlignmentRight;
 		self.valueTextColor = [UIColor colorWithRed:0.220 green:0.329 blue:0.529 alpha:1.0];
 		self.valueFont = [UIFont systemFontOfSize:16];
 		self.valueFrame = CGRectMake(160, 13, 150, IBAFormFieldValueHeight);

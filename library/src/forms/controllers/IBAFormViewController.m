@@ -292,13 +292,11 @@
 
 - (void)adjustTableViewHeightForCoveringFrame:(CGRect)coveringFrame {
     float offsetY = 0;
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
     // iOS7 changed bar handling, making view to go under the nav bar. To prevent this we have to force views to move down
     UIApplication *app = [UIApplication sharedApplication];
     float statusBarHeight = MIN(app.statusBarFrame.size.width, app.statusBarFrame.size.height);
     float navBarHeight = self.navigationController.navigationBar.frame.size.height;
     offsetY = statusBarHeight+navBarHeight;
-#endif
     
     if (!CGRectEqualToRect(coveringFrame, self.keyboardFrame)) {
         self.keyboardFrame = coveringFrame;
@@ -312,14 +310,12 @@
         
         self.tableView.contentInset = contentInsets;
     } else {
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
         // iOS7 changed bar handling, making view to go under the nav bar. To prevent this we have to force views to move down
         if ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) {
             UIEdgeInsets contentInsets = UIEdgeInsetsMake(offsetY, 0, 0, 0);
             self.tableView.contentInset = contentInsets;
             self.tableView.scrollIndicatorInsets = contentInsets;
         }
-#endif
     }
 }
 
