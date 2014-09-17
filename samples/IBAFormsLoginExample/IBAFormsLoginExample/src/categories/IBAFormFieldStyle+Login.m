@@ -22,10 +22,10 @@
 
 	[style setLabelTextColor:[UIColor blackColor]];
 	[style setLabelFont:[UIFont boldSystemFontOfSize:13.]];
-	[style setLabelTextAlignment:UITextAlignmentRight];
+	[style setLabelTextAlignment:NSTextAlignmentRight];
 	[style setLabelFrame:CGRectMake(IBAFormFieldLabelX, 8., 180., IBAFormFieldLabelHeight)];
 
-	[style setValueTextAlignment:UITextAlignmentLeft];
+	[style setValueTextAlignment:NSTextAlignmentLeft];
 	[style setValueTextColor:[UIColor colorWithRed:.22 green:.329 blue:.529 alpha:1.]];
 	[style setValueFont:[UIFont systemFontOfSize:14.]];
 	[style setValueFrame:CGRectMake(210., 20., 110., IBAFormFieldValueHeight)];
@@ -39,7 +39,7 @@
 	[style setLabelTextColor:[UIColor colorWithRed:.318 green:.4 blue:.569 alpha:1.]];
 	[style setLabelFont:[UIFont boldSystemFontOfSize:20.]];
 	[style setLabelFrame:CGRectMake(10., 8., 300., 30.)];
-	[style setLabelTextAlignment:UITextAlignmentCenter];
+	[style setLabelTextAlignment:NSTextAlignmentCenter];
 	[style setLabelAutoresizingMask:UIViewAutoresizingFlexibleWidth];
 
 	return style;
