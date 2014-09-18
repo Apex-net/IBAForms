@@ -342,7 +342,7 @@
 }
 
 - (void)dismissModalViewController:(NSNotification *)notification; {
-    [self dismissViewControllerAnimated:YES completion:NULL];
+	[self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 #pragma mark -
@@ -355,12 +355,12 @@
 }
 
 - (CGRect)rectForOrientationFrame:(CGRect)frame {
-	if (UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
-		return frame;
-	}
-	else {
-		return CGRectMake(frame.origin.y, frame.origin.x, frame.size.height, frame.size.width);
-	}	
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0 &&
+        !UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
+            return CGRectMake(frame.origin.y, frame.origin.x, frame.size.height, frame.size.width);
+        
+    }
+    return frame;
 }
 
 #pragma mark -
