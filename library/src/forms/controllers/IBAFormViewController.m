@@ -337,12 +337,12 @@
 - (void)presentModalViewController:(NSNotification *)notification {
 	UIViewController *viewController = [[notification userInfo] objectForKey:IBAViewControllerKey];
 	if (viewController != nil) {
-		[self presentModalViewController:viewController animated:YES];
+        [self presentViewController:viewController animated:YES completion:NULL];
 	}
 }
 
 - (void)dismissModalViewController:(NSNotification *)notification; {
-	[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 #pragma mark -

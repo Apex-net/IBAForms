@@ -51,7 +51,6 @@
 		
 		nextPreviousButton_ = [[UISegmentedControl alloc] initWithItems:[NSArray 
 					arrayWithObjects:IBAInputNavigationToolbarPreviousTitle, IBAInputNavigationToolbarNextTitle, nil]];
-		nextPreviousButton_.segmentedControlStyle = UISegmentedControlStyleBar;
 		nextPreviousButton_.momentary = YES;
 		
 		nextPreviousBarButtonItem_ = [[UIBarButtonItem alloc] initWithCustomView:self.nextPreviousButton];
