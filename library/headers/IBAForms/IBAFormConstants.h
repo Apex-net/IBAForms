@@ -33,6 +33,7 @@
 #define IBAFormFieldLabelX 10
 #define IBAFormFieldLabelY 5
 #define IBAFormFieldLabelWidth 60
+#define IBAFormFieldPickerWidth UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? 768.0f : 320.0f
 #define IBAFormFieldLabelHeight 30
 #define IBAFormFieldLabelFont [UIFont systemFontOfSize:12]
 #define IBAFormFieldLabelTextColor [UIColor grayColor]
