@@ -109,6 +109,11 @@
 	[hiddenCellCache_ setClipsToBounds:YES];
 
 	tableViewOriginalFrame_ = self.tableView.frame;
+    
+    // fix for iOS9 tableViewCell margin
+    if (([[[UIDevice currentDevice] systemVersion] compare:@"9.0" options:NSNumericSearch] != NSOrderedAscending)) {
+        self.tableView.cellLayoutMarginsFollowReadableWidth = NO;
+    }
 }
 
 - (void)viewDidUnload {
