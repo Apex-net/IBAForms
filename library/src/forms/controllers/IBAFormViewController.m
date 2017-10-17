@@ -258,7 +258,7 @@
 
 - (void)inputManagerWillShow:(NSNotification *)notification {
 	NSDictionary* info = [notification userInfo];
-    // fix for iOS 11: using UIKeyboardFrameEndUserInfoKey instead of UIKeyboardFrameBeginUserInfoKey
+    // fix for iOS 11 (wrong height): using UIKeyboardFrameEndUserInfoKey instead of UIKeyboardFrameBeginUserInfoKey
     CGRect keyboardFrame = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
 	[self adjustTableViewHeightForCoveringFrame:[self rectForOrientationFrame:keyboardFrame]];
 }
